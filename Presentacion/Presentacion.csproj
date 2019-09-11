@@ -330,6 +330,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\buscarUsuariosController.cs" />
+    <Compile Include="Controllers\ChatController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MiPerfilController.cs" />
     <Compile Include="Controllers\verAmigosController.cs" />
@@ -365,6 +366,7 @@
     <Content Include="Views\MiPerfil\MiPerfil.cshtml" />
     <Content Include="Views\buscarUsuarios\buscarUsuarios.cshtml" />
     <Content Include="Views\verAmigos\verAmigos.cshtml" />
+    <Content Include="Views\Chat\Chat.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
