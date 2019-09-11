@@ -1,0 +1,332 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="central-meta">
+    <div class="new-postbox">
+        <figure>
+            <img src="~/images/resources/admin2.jpg" alt="">
+        </figure>
+        <div class="newpst-input">
+            <form method="post">
+                <textarea rows="2" placeholder="¿Qué estás pensando?"></textarea>
+
+                <div class="attachments">
+
+
+                    <ul>
+                        <li>
+                            <i class="fa fa-lock dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"></i>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Público</a>
+                                <a class="dropdown-item" href="#">Solo amigos</a>
+                                <a class="dropdown-item" href="#">Privado</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa fa-image"></i>
+                            <label class="fileContainer">
+                                <input type="file">
+                            </label>
+                        </li>
+                        <li>
+                            <i class="fa fa-video-camera"></i>
+                            <label class="fileContainer">
+                                <input type="file">
+                            </label>
+                        </li>
+                        <li>
+                            <button type="submit">Publicar</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div><!-- add post new box -->
+<!-- ejemplo de una publicacion de FACEBOT -->
+<div class="loadMore">
+    <div class="central-meta item">
+        <!-- inicio del post -->
+        <div class="user-post">
+            <div class="friend-info">
+
+                <figure>
+                    <img src="~/images/resources/friend-avatar10.jpg" alt="">
+                </figure>
+                <div class="friend-name">
+                    <!-- quien lo publico -->
+                    <ins><a href="time-line.html" title="">Janice Griffith</a></ins>
+                    <!-- cuando -->
+                    <span>Publicado: 2 de julio 2019, 8:56pm</span>
+                </div>
+                <div class="post-meta">
+                    <!-- descripción -->
+                    <div class="description">
+                        <p>
+                            El fracaso ha sido siempre el mejor mentor
+                        </p>
+                    </div>
+                    <div class="we-video-info">
+                        <ul>
+                            <!-- like -->
+                            <li>
+                                <span class="like" data-toggle="tooltip" title="Me gusta">
+                                    <i class="ti-heart" style="color: blue"></i>
+                                    <ins style="color: white">10</ins>
+                                </span>
+                            </li>
+
+                            <!-- Cuantos comentarios tiene la publicacion -->
+                            <li>
+                                <span class="comment" data-toggle="tooltip" title="Comments">
+                                    <i class="fa fa-comments-o"></i>
+                                    <ins>52</ins>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-trash"></i>
+                            </li>
+                            <li>
+                                <span class="views" data-toggle="tooltip" title="views">
+                                    editar
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- Area de comentarios -->
+            <div class="coment-area">
+                <ul class="we-comet">
+
+                    <!-- comentar la publicación -->
+                    <li class="post-comment">
+                        <div class="comet-avatar">
+                            <img src="~/images/resources/comet-1.jpg" alt="">
+                        </div>
+                        <div class="post-comt-box">
+                            <form method="post">
+                                <textarea placeholder="Quieres decir algo?"></textarea>
+                                <button type="Comentar"></button>
+                            </form>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- fin de area de comentarios -->
+        </div>
+        <!-- fin de la publicación -->
+    </div>
+    <div class="central-meta item">
+        <!-- inicio del post -->
+        <div class="user-post">
+            <div class="friend-info">
+                <figure>
+                    <img src="~/images/resources/friend-avatar10.jpg" alt="">
+                </figure>
+                <div class="friend-name">
+                    <!-- quien lo publico -->
+                    <ins><a href="time-line.html" title="">Janice Griffith</a></ins>
+                    <!-- cuando -->
+                    <span>published: june,2 2018 19:PM</span>
+                </div>
+                <div class="post-meta">
+                    <img src="~/images/resources/user-post.jpg" alt="">
+                    <div class="we-video-info">
+                        <ul>
+                            <!-- like -->
+                            <li>
+                                <span class="like" data-toggle="tooltip" title="like">
+                                    <i class="ti-heart"></i>
+                                    <ins>2.</ins>
+                                </span>
+                            </li>
+
+                            <!-- Cuantos comentarios tiene la publicacion -->
+                            <li>
+                                <span class="comment" data-toggle="tooltip" title="Comments">
+                                    <i class="fa fa-comments-o"></i>
+                                    <ins>52</ins>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-trash"></i>
+                            </li>
+                            <li>
+                                <span class="views" data-toggle="tooltip" title="views">
+                                    editar
+                                </span>
+                            </li>
+                    </div>
+                    <!-- descripción -->
+                    <div class="description">
+                        <p>
+                            World's most beautiful car in Curabitur the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Area de comentarios -->
+            <div class="coment-area">
+                <ul class="we-comet">
+                    <!-- Comnetario 1 -->
+                    <li>
+                        <div class="comet-avatar">
+                            <img src="~/images/resources/comet-1.jpg" alt="">
+                        </div>
+                        <div class="we-comment">
+                            <div class="coment-head">
+                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
+                                <span>Hace 1 hora</span>
+                                <a class="we-reply" href="#" title="Reply"><i class="fa fa-times"></i></a>
+                            </div>
+                            <p>we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post</p>
+                        </div>
+                    </li>
+                    <!-- Comentario 2 -->
+                    <li>
+                        <div class="comet-avatar">
+                            <img src="~/images/resources/comet-1.jpg" alt="">
+                        </div>
+                        <div class="we-comment">
+                            <div class="coment-head">
+                                <h5><a href="time-line.html" title="">Donald Trump</a></h5>
+                                <span>1 week ago</span>
+                                <a class="we-reply" href="#" title="Reply"><i class="fa fa-times"></i></a>
+                            </div>
+                            <p>
+                                we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel
+                                <i class="em em-smiley"></i>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- comentar la publicación -->
+                    <li class="post-comment">
+                        <div class="comet-avatar">
+                            <img src="~/images/resources/comet-1.jpg" alt="">
+                        </div>
+                        <div class="post-comt-box">
+                            <form method="post">
+                                <textarea placeholder="Quieres decir algo?"></textarea>
+                                <button type="Comentar"></button>
+                            </form>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- fin de area de comentarios -->
+        </div>
+        <!-- fin de la publicación -->
+    </div>
+
+    <!-- otro post -->
+    <div class="central-meta item">
+        <div class="user-post">
+            <div class="friend-info">
+                <figure>
+                    <img src="~/images/resources/admin2.jpg" alt="">
+                </figure>
+                <div class="friend-name">
+                    <ins><a href="time-line.html" title="">Janice Griffith</a></ins>
+                    <span>Publicado: 2 de julio 2019, 8:56pm</span>
+                </div>
+                <div class="post-meta">
+                    <div class="description">
+
+                        <p>
+                            Hice este video para mi canal de youtube que les parece? dejen sus comentarios
+                        </p>
+                    </div>
+                    <iframe src="https://player.vimeo.com/video/15232052" height="315" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div class="we-video-info">
+                        <ul>
+                            <!-- like -->
+                            <li>
+                                <span class="like" data-toggle="tooltip" title="Me gusta">
+                                    <i class="ti-heart" style="color: white"></i>
+                                    <ins style="color: white">10</ins>
+                                </span>
+                            </li>
+
+                            <!-- Cuantos comentarios tiene la publicacion -->
+                            <li>
+                                <span class="comment" data-toggle="tooltip" title="Comments">
+                                    <i class="fa fa-comments-o"></i>
+                                    <ins>52</ins>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-trash"></i>
+                            </li>
+                            <li>
+                                <span class="views" data-toggle="tooltip" title="views">
+                                    editar
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="coment-area">
+                <ul class="we-comet">
+                    <li>
+                        <div class="comet-avatar">
+                            <img src="~/images/resources/comet-1.jpg" alt="">
+                        </div>
+                        <div class="we-comment">
+                            <div class="coment-head">
+                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
+                                <span>1 year ago</span>
+                                <a class="we-reply" href="#" title="Reply"><i class="fa fa-times"></i></a>
+                            </div>
+                            <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="comet-avatar">
+                            <img src="~/images/resources/comet-2.jpg" alt="">
+                        </div>
+                        <div class="we-comment">
+                            <div class="coment-head">
+                                <h5><a href="time-line.html" title="">Sophia</a></h5>
+                                <span>1 week ago</span>
+                                <a class="we-reply" href="#" title="Reply"><i class="fa fa-times"></i></a>
+                            </div>
+                            <p>
+                                we are working for the dance and sing songs. this video is very awesome for the youngster.
+                                <i class="em em-smiley"></i>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="post-comment">
+                        <div class="comet-avatar">
+                            <img src="~/images/resources/comet-2.jpg" alt="">
+                        </div>
+                        <div class="post-comt-box">
+                            <form method="post">
+                                <textarea placeholder="Post your comment"></textarea>
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
