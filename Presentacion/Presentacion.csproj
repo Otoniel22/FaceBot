@@ -124,6 +124,7 @@
     <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\strip-skins\.DS_Store" />
+    <Content Include="images\BlueOcean3.jpg" />
     <Content Include="images\book-icon.png" />
     <Content Include="images\BOTicon.png" />
     <Content Include="images\credit-cards.png" />
@@ -330,17 +331,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\buscarUsuariosController.cs" />
+    <Compile Include="Controllers\CambiarContraseniaController.cs" />
     <Compile Include="Controllers\ChatController.cs" />
+    <Compile Include="Controllers\EditarPerfilController.cs" />
+    <Compile Include="Controllers\FotosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InicioSesionController.cs" />
     <Compile Include="Controllers\MiPerfilController.cs" />
+    <Compile Include="Controllers\NotificacionesController.cs" />
+    <Compile Include="Controllers\PrivacidadDatosController.cs" />
     <Compile Include="Controllers\verAmigosController.cs" />
+    <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\BlueOcean3.webp" />
     <Content Include="images\wink.webp" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.eotv=4.7.0" />
@@ -367,6 +374,13 @@
     <Content Include="Views\buscarUsuarios\buscarUsuarios.cshtml" />
     <Content Include="Views\verAmigos\verAmigos.cshtml" />
     <Content Include="Views\Chat\Chat.cshtml" />
+    <Content Include="Views\CambiarContrasenia\CambiarContrasenia.cshtml" />
+    <Content Include="Views\Fotos\Fotos.cshtml" />
+    <Content Include="Views\InicioSesion\InicioSesion.cshtml" />
+    <Content Include="Views\PrivacidadDatos\PrivacidadDatos.cshtml" />
+    <Content Include="Views\Videos\Videos.cshtml" />
+    <Content Include="Views\EditarPerfil\EditarPerfil.cshtml" />
+    <Content Include="Views\Notificaciones\Notificaciones.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

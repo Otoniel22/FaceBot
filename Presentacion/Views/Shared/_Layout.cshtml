@@ -3,8 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @Styles.Render("~/Content/css")  
-</head>
+    @Styles.Render("~/Content/css")
+    <script>
+        function hrefBuscarUsuarios() {
+            window.location.assign("@Url.Action("buscarUsuarios", "buscarUsuarios")")
+        }
+        function hrefNotificaciones() {
+            window.location.assign("@Url.Action("Notificaciones", "Notificaciones")")
+        }
+        function hrefIniciaSesion() {
+            window.location.assign("@Url.Action("InicioSesion", "InicioSesion")")
+        }
+    </script>
+</head> 
 <body>
     
     
@@ -21,21 +32,18 @@
             <div class="top-area">
                 <ul class="main-menu">
                     <li>
-                        <a href="index.html" title="">Inicio</a>
+                        <a href="@Url.Action("Index","Home")" title="">Inicio</a>
                     </li>
                     <li>
-                        <a href="MiPerfil.html" title="">Mi perfil</a>
-                    </li>
-                    <li>
-                        <a href="#" title="">Configuración</a>
+                        <a href="@Url.Action("MiPerfil","MiPerfil")" title="">Mi perfil</a>
                         <ul>
-                            <li><a href="CambiarContrasenia.html" title="">Cambiar contraseña</a></li>
-                            <li><a href="PrivacidadDatos.html" title="">Datos personales</a></li>
+                            <li><a href="@Url.Action("CambiarContrasenia","CambiarContrasenia")" title="">Cambiar contraseña</a></li>
+                            <li><a href="@Url.Action("PrivacidadDatos","PrivacidadDatos")" title="">Editar privacidad</a></li>
+                            <li><a href="@Url.Action("EditarPerfil","EditarPerfil")" title="">Editar perfil</a></li>
                         </ul>
                     </li>
-
                 </ul>
-
+                
                 <!-- buscador -->
                 <ul class="setting-area">
                     <li>
@@ -43,65 +51,60 @@
                         <div class="searched">
                             <form method="post" class="form-search">
                                 <input type="text" placeholder="Buscar un Amigo">
-                                <button data-ripple><i class="ti-search"></i></button>
+                                <button onclick="hrefBuscarUsuarios()" data-ripple><i class="ti-search"></i></button>
+
                             </form>
                         </div>
                     </li>
                     <!-- Notificaciones -->
                     <li>
                         <a href="#" title="Notification" data-ripple="">
-                            <i class="ti-bell"></i><span>4</span>
+                            <i class="ti-bell"></i>
                         </a>
                         <!-- detalle notificaciones -->
                         <div class="dropdowns">
                             <ul class="drops-menu">
                                 <li>
-                                    <a href="notifications.html" title="">
-                                        <img src="images/resources/thumb-1.jpg" alt="">
+                                    <a href="@Url.Action("Notificaciones","Notificaciones")" title="">
+                                        <img src="~/images/resources/thumb-1.jpg" alt="">
                                         <div class="mesg-meta">
                                             <h6>sarah Loren</h6>
-                                            <span>Hi, how r u dear ...?</span>
-                                            <i>2 min ago</i>
+                                            <span>Notificación 1</span>
                                         </div>
                                     </a>
-                                    <span class="tag green">New</span>
                                 </li>
                                 <li>
-                                    <a href="notifications.html" title="">
-                                        <img src="images/resources/thumb-2.jpg" alt="">
+                                    <a href="@Url.Action("Notificaciones","Notificaciones")" title="">
+                                        <img src="~/images/resources/thumb-2.jpg" alt="">
                                         <div class="mesg-meta">
                                             <h6>Jhon doe</h6>
-                                            <span>Hi, how r u dear ...?</span>
-                                            <i>2 min ago</i>
+                                            <span>Notificación 2</span>
                                         </div>
                                     </a>
-                                    <span class="tag red">Reply</span>
                                 </li>
                                 <li>
-                                    <a href="notifications.html" title="">
-                                        <img src="images/resources/thumb-3.jpg" alt="">
+                                    <a href="@Url.Action("Notificaciones","Notificaciones")" title="">
+                                        <img src="~/images/resources/thumb-3.jpg" alt="">
                                         <div class="mesg-meta">
                                             <h6>Andrew</h6>
-                                            <span>Hi, how r u dear ...?</span>
-                                            <i>2 min ago</i>
+                                            <span>Notificación 3</span>
                                         </div>
                                     </a>
                                 </li>
+
                             </ul>
                             <!-- fin del ejemplo notificaciones -->
                             <!-- ver todas las notificaciones -->
-                            <a href="notifications.html" title="" class="more-mesg">Ver más</a>
+                            <a onclick="hrefNotificaciones()" title="">Ver más</a>
                         </div>
                     </li>
                     <!-- inicio de perfil-->
 
                 </ul>
                 <div class="user-img">
-                    <img src="images/resources/admin.jpg" alt="">
+                    <img src="~/images/resources/admin.jpg" alt="">
                     <div class="user-setting">
-                        <a href="#" title=""><i class="ti-user"></i>Janice Griffith</a>
-                        <a href="#" title=""><i class="ti-pencil-alt"></i>Privacidad</a>
-                        <a href="#" title=""><i class="ti-power-off"></i>Cerrar sesión</a>
+                        <a onclick="hrefIniciaSesion()" title="">Cerrar Sesion</a>
                     </div>
                 </div>
 
@@ -122,23 +125,22 @@
                                             <ul class="naves">
                                                 <li>
                                                     <i class="fa fa-users"></i>
-                                                    <a href="buscarUsuarios.html" title="">Mis amigos</a>
-                                                </li>
+                                                    @Html.ActionLink("Mis amigos", "VerAmigos", "verAmigos")                                               </li>
                                                 <li>
                                                     <i class="fa fa-camera"></i>
-                                                    <a href="Fotos.html" title="">Fotos</a>
+                                                    @Html.ActionLink("Fotos", "Fotos", "Fotos")
                                                 </li>
                                                 <li>
                                                     <i class="fa fa-film"></i>
-                                                    <a href="Videos.html" title="">Videos</a>
+                                                    @Html.ActionLink("Videos", "Videos", "Videos")
                                                 </li>
                                                 <li>
                                                     <i class="fa fa-weixin"></i>
-                                                    <a href="Chat.html" title="">Chat</a>
+                                                    @Html.ActionLink("Chat", "Chat", "Chat")  
                                                 </li>
                                                 <li>
                                                     <i class="fa fa-sign-out"></i>
-                                                    <a href="IniciarSesion.html" title="">Salir</a>
+                                                    @Html.ActionLink("Cerrar Sesion", "InicioSesion", "InicioSesion")
                                                 </li>
                                             </ul>
                                         </div><!-- Shortcuts -->

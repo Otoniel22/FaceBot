@@ -1,0 +1,115 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>FaceBOT</title>
+    <link rel="icon" href="~/images/BOTicon.png" type="image/png" sizes="16x16">
+
+    @Styles.Render("~/Content/css")
+
+
+</head>
+<body>
+    <!--<div class="se-pre-con"></div>-->
+    <div class="theme-layout" style="background-image:url(/images/BlueOcean3.jpg)">
+        <div class="container-fluid pdng0">
+            <div class="row merged">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="land-featurearea" style="background-color:#14144d17 ">
+                        <div class="land-meta">
+                            <h1 class="font-weight-bold" style="font-family: Muli">FaceBOT</h1>
+                            <p>
+                                FaceBOT es gratis y fácil de usar.
+                            </p>
+
+                            <div class="friend-logo">
+                                <span> <img src="~/images/wink.webp" alt=""> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="login-reg-bg" style="background-color:#14144d17">
+                        <div class="log-reg-area sign">
+                            <h2 class="log-title">Iniciar Sesión</h2>
+                            <form method="post">
+                                <div class="form-group">
+                                    <input type="text" id="input" class="text-white" required>
+                                    <label class="control-label" for="input">Correo Electrónico</label><i class="mtrl-select"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" required="required" class="text-white" />
+                                    <label class="control-label" for="input">Contraseña</label><i class="mtrl-select"></i>
+                                </div>
+                                <div class="col text-center">
+                                    <button class="mtr-btn signin" type="submit"><span>Iniciar Sesión</span></button>
+                                    <button class="mtr-btn signup" type="button"><span>Registrarse</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="log-reg-area reg">
+                            <h2 class="log-title text-center">Registro</h2>
+                            <form method="post">
+                                <div class="form-group">
+                                    <input type="text" required class="text-white" />
+                                    <label class="control-label" for="input">Nombre</label><i class="mtrl-select"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="required" class="text-white" />
+                                    <label class="control-label" for="input">Apellido</label><i class="mtrl-select"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" required="required" class="text-white" />
+                                    <label class="control-label" for="input">Contraseña</label><i class="mtrl-select"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" required="required" class="text-white" />
+                                    <label class="control-label " for="input">Fecha de Nacimiento</label><i class="mtrl-select"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" required="required" class="text-white" />
+                                    <label class="control-label" for="input"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2b6e464a42476b">Correo Electrónico</a></label><i class="mtrl-select"></i>
+                                </div>
+                                <div class="form-radio">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="radio" checked="checked" /><i class="check-box"></i>Hombre
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="radio" /><i class="check-box"></i>Mujer
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="already-have">Ya tengo una cuenta</a>
+
+                                    <button type="submit" class="mtr btn-danger">Ingresa con Google</button>
+                                </div>
+                                <div>
+
+                                </div>
+                                <div class="text-center">
+                                    <button class="mtr-btn signup" type="button"><span>Registrarse</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/script.js"></script>
+
+</body>
+</html>
